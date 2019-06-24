@@ -1,6 +1,7 @@
 package com.hzp.nzhbj.pager.menu.item;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
 import android.os.Message;
@@ -20,6 +21,7 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.hzp.nzhbj.R;
+import com.hzp.nzhbj.activity.NewsDetailActivity;
 import com.hzp.nzhbj.base.BaseMenupager;
 import com.hzp.nzhbj.bean.NewsBean;
 import com.hzp.nzhbj.bean.NewsBean.News;
@@ -130,6 +132,10 @@ public class MenuNewsCenterItemPager extends BaseMenupager {
                     String sp_readid = SharedPreferencesTool.getString( activity, Constants.NEWSREAD, "" );
                     SharedPreferencesTool.saveString( activity,Constants.NEWSREAD,sp_readid+"#"+news.get( position-1 ).id );
                 }
+                //跳转到新闻详情页面，显示新闻详情
+                Intent intent = new Intent( activity, NewsDetailActivity.class );
+                intent.putExtra( "url",news.get( position-1 ).url );
+                activity.startActivity( intent );
             }
         } );
         //请求服务器，获取最终界面的数据

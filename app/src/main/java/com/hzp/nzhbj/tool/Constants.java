@@ -12,4 +12,6 @@ public class Constants {
     public static final String NEWSCENTERMSG = "newscentermsg";
     /**已读新闻的key**/
     public static final String NEWSREAD = "newsread";
+    /*组图数据的key*/
+    public static final String PHOTOMSG = "photomsg";
 }

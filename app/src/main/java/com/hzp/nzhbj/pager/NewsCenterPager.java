@@ -143,7 +143,7 @@ public class NewsCenterPager extends BasePager{
         list.clear();
         list.add( new MenuNewsCenterPager( activity,newsCenterInfo.data.get( 0 ) ) );
         list.add(new MenuSpecialPager(activity));
-        list.add(new MenuPhotosPager(activity));
+        list.add(new MenuPhotosPager(activity,mImage));
         list.add(new MenuActionPager(activity));
 
         //设置默认显示的界面为新闻界面
