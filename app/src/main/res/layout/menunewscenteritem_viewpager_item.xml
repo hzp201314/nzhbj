@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menunewscenteritem_viewpageritem_iv_icon"
+    android:src="@drawable/topnews_item_default"
+    android:scaleType="centerCrop"
+    android:background="@drawable/topnews_item_default">
+    <!-- android:background="@drawable/topnews_item_default"
+           scaleType :设置imageview图片显示样式
+               centerCrop ： 将图片放大/缩小，在imageview的中心位置显示图片，如果图片有超出imageview的部分，裁剪去除
+
+      -->
+</ImageView>

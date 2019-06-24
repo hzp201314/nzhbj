@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="185dp">
+    <!-- com/apk/res-auto : app的属性去当前的工程中查找 -->
+    <com.hzp.nzhbj.ui.RollViewPager
+        android:id="@+id/menunewscenteritem_vp_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="185dp">
+
+    </com.hzp.nzhbj.ui.RollViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/menunewscenteritem_vp_viewpager"
+        android:background="#aa000000">
+
+        <TextView
+            android:id="@+id/menunewscenteritem_tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="蜗居生活"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+        <!-- radius : 半径
+              fillColor ： 填充的点的颜色
+              pageColor ： 页面的点的颜色
+              strokeColor ： 边框的颜色
+              strokeWidth ： 边框的宽度
+        -->
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/menunewscenter_cpi_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:fillColor="#FF0000"
+            app:pageColor="#FFFFFF"
+            app:radius="3dp"
+            app:strokeWidth="0dp" />
+    </LinearLayout>
+
+</RelativeLayout>

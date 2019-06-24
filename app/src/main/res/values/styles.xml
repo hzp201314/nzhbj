@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- HomeFragment的radiobutton样式
+         <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+            android:textColor="@color/selector_homefragment_rbtn_text_color"
+            />
+     -->
+    <style name="HomeFragmentRadioButtonStyle">
+        <!-- android:layout_width : 加上权重并设置0dp表示的含义各个控件宽度平均分配   ；
+        加上权重设置wrap_content表示的含义各个控件根据自己实际显示的内容动态设置自己的宽度-->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/selector_homefragment_rbtn_text_color</item>
+    </style>
+
+</resources>
